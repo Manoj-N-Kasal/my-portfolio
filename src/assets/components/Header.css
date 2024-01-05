@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+nav{
+    position: sticky;
+    top: 0px;
+    right: 40%;
+    background-color: #84cffd;
+    display: flex;
+    flex-wrap: wrap;
+}
+.linkClass{
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+ul{
+    height: 50px;
+    padding-top: 10px;
+}
+
+
+.linkClass:hover{
+    color: #fff;
+}
+.menu-icon{
+    display: none;
+    cursor: pointer;
+}
+.myName{
+position: absolute;
+top: 0;
+right: 0;
+margin: 15px 20px 0 0;
+text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff; 
+}
+.myName h4{
+    color: #373431;
+}
+
+
+@media screen and (max-width:600px){
+    nav{
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .menu-icon{
+        display: block;
+        margin-left: 15px;
+        font-size: 1.8rem;
+    }
+    .menu-links {
+        display: none;
+        list-style: none;
+        padding: 0;
+
+    }
+
+    .menu-links.show {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin-top: 10px;
+        font-size: 1rem;
+    }
+    .myName{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
